@@ -166,14 +166,20 @@ export default function TeamPage() {
     }, []);
 
     return (
-        <main className="bg-[#0a3a52] min-h-screen pt-24 pb-32">
+        <main className="min-h-screen pt-24 pb-32">
             <CustomCursor />
             <FloatingDock items={navItems} />
 
             <section ref={headerRef} className="container mx-auto px-8 mb-16 text-center">
                 <h1
-                    className="text-6xl md:text-8xl lg:text-9xl font-bold text-elite-silver mb-8"
-                    style={{ fontFamily: "Clash Display, sans-serif" }}
+                    className="text-6xl md:text-8xl lg:text-9xl font-bold mb-8"
+                    style={{
+                        fontFamily: "Clash Display, sans-serif",
+                        background: "linear-gradient(180deg, #D4AF37 0%, #8a701e 70%)",
+                        backgroundClip: "text",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                    }}
                 >
                     Our Team
                 </h1>
